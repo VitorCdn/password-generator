@@ -107,7 +107,35 @@ header {
     width: 80%;
 }
 
-/* The Result of the password container (button-copy to clipboard)*/
+/* Footer */
+
+footer {
+    background-color: var(--secondary-background-color);
+    border-top: 2px solid var(--orange-color);
+    border-bottom: 2px solid var(--orange-color);
+    padding: 20px;
+}
+
+#footer-title {
+    color: var(--orange-color);
+    text-align: center;
+}
+
+.contact-container {
+    list-style: none;
+    padding: 15px;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+li img {
+    margin-right: 8px;
+}
 
 
 
