@@ -36,3 +36,12 @@ document.getElementById("button-generate-pass").addEventListener('click', () => 
 
     document.getElementById("result-output").value = result
 })
+
+document.getElementById("button-copy-clipboard").addEventListener("click", () => {
+    let copyText = document.getElementById("result-output");
+    copyText.select()
+    copyText.setSelectionRange(0, 99999)
+
+    navigator.clipboard.writeText(copyText.value)
+
+})
