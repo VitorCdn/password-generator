@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Password Generator</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1 id="header-title">Password Generator</h1>
+        </header>
+
+        <div class="main-container">
+            <div class="option-input">
+                <input type="number" placeholder="Write the size of the password to generate" class="input" />
+
+                <div class="options-container">
+
+                    <div>
+                        <input type="checkbox" id="lowercase" name="lowercase"/>
+                        <label for="lowercase">Lowercase</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="uppercase" name="uppercase" />
+                        <label for="uppercase">Uppercase</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="numbers" name="numbers" />
+                        <label for="numbers">Numbers</label>
+                    </div>
+
+                </div>
+
+                <button id="button-generate-pass">Generate</button>
+            </div>
+
+            <h2 id="result-title">Result</h2>
+
+            <div class="result-container">
+                <input type="text" id="result-output" class="input"/>
+                <button id="button-copy-clipboard">copy</button>
+            </div>
+        </div>
+
+        <footer>
+
+            <ul class="contact-container">
+                <li>github</li>
+            </ul>
+
+            <h3>Developed by: Vitor Nascimento</h3>
+
+        </footer>
+
+    </body>
+
+    <script src="./script.js"></script>
+</html>
