@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+    --orange-color: #ffb86c;
+    --background-color: #282a36;
+    --secondary-background-color: #44475a;
+    --main-color: #6272a4;
+    --green-color: #50fa7b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: var(--secondary-background-color);
+    color: var(--orange-color);
+    border-bottom: 2px solid var(--orange-color);
+    padding: 20px;
+    text-align: center;
+    transition: width 10s;
+}
+
+#header-title {
+    font-size: 15pt;
+}
+
+/* The Main Content */
+
+
+.main-container {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: var(--secondary-background-color);
+}
+
+/* option input */
+
+.option-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.input{
+    padding: 10px;
+    font-size: 12pt;
+    background-color: var(--background-color);
+    color: var(--orange-color);
+}
+
+/* option input (The checkbox with the options) */
+
+.options-container {
+    margin: 15px 15px;
+}
+
+.options-container div {
+    border-bottom: 2px solid var(--orange-color);
+    color: white;
+}
+
+/* option input (Button generate password and the button copy the result to clipboard) */
+
+#button-generate-pass, #button-copy-clipboard{
+    font-size: 12pt;
+    padding: 10px;
+    background-color: var(--green-color);
+    font-weight: 600;
+    transition-property: color border-radius box-shadown;
+    transition-duration: 0.8s;
+}
+
+#button-generate-pass:hover {
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px black;
+    color: white;
+    cursor: pointer;
+}
+
+/* The Result of the password container */
+
+#result-title {
+    text-align: center;
+    color: var(--orange-color);
+    margin: 15px 0;
+}
+
+.result-container {
+    margin: auto;
+    text-align: center;
+}
+
+#result-output {
+    width: 80%;
+}
+
+/* The Result of the password container (button-copy to clipboard)*/
+
+
+
+@media screen and (min-width: 1000px) {
+    header {
+        margin: auto;
+        width: 800px;
+        border-right: 2px solid;
+        border-left: 2px solid;
+        border-color: var(--orange-color);
+        border-radius: 0px 0px 8px 8px;
+    }
+}
