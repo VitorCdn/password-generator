@@ -124,13 +124,21 @@ footer {
 .contact-container {
     list-style: none;
     padding: 15px;
+    display: flex;
+    justify-content: space-around;
 }
 
 li a {
     display: flex;
     align-items: center;
     text-decoration: none;
+    border: 2px solid transparent;
+    padding: 3px;
     color: white;
+}
+
+li a:hover {
+    border-color: var(--orange-color);
 }
 
 li img {
