@@ -148,13 +148,27 @@ li img {
 
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
     header {
         margin: auto;
-        width: 800px;
+        width: 1200px;
         border-right: 2px solid;
         border-left: 2px solid;
         border-color: var(--orange-color);
         border-radius: 0px 0px 8px 8px;
+    }
+
+    footer {
+        width: 1200px;
+        margin: auto;
+        border: 2px solid var(--orange-color);
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .main-container {
+        width: 700px;
+        margin: 15px auto;
     }
 }
